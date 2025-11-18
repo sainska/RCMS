@@ -1,0 +1,53 @@
+.auth-container {
+  background-image: url("/construction-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: black;
+}
+
+.forgot-password-link {
+  font-size: 0.9rem;
+  text-align: right;
+  display: block;
+  color: green;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  color: black;
+}

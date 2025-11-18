@@ -1,0 +1,94 @@
+.funding-requests-container {
+  background-color: #013220;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Updated Header - Consistent */
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f3c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.module-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.module-back {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.module-back:hover {
+  color: #90EE90;
+}
+
+.module-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.requests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.request-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.request-icon {
+  font-size: 2.5rem;
+  color: #006400;
+  margin-bottom: 1rem;
+}
+
+.status {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.approved {
+  color: green;
+}
+
+.approve-btn {
+  background-color: #006400;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.approve-btn:hover {
+  background-color: #228b22;
+}

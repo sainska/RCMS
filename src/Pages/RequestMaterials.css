@@ -1,0 +1,141 @@
+.request-materials-container {
+  background-color: #013220;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+/* Header */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f3c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.project-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.project-header .back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.project-header .back-button:hover {
+  color: #90EE90;
+}
+
+/* Title */
+.materials-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #90EE90;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.material-form {
+  background-color: #ffffff;
+  color: #013220;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #013220;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.add-btn,
+.submit-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover,
+.submit-btn:hover {
+  background-color: #228b22;
+}
+.previous-requests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.request-card {
+  background-color: #ffffff;
+  color: #013220;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+}
+
+.request-card h4 {
+  margin-bottom: 0.5rem;
+  color: #006400;
+  font-size: 1.2rem;
+}
+
+.no-requests {
+  text-align: center;
+  color: #ccc;
+  font-style: italic;
+}

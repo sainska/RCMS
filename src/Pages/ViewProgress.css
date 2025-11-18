@@ -1,0 +1,121 @@
+/* ViewProgress.css */
+
+.view-progress-container {
+  padding: 1rem;
+  background-color: #013220;
+  color: white;
+  min-height: 100vh;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #014d26;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.progress-details {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #90ee90;
+}
+
+.stage-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.stage-card {
+  background: #015230;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.stage-card:hover {
+  transform: scale(1.03);
+}
+
+.stage-card.completed {
+  border-left: 5px solid #00ff7f;
+}
+
+.stage-card.pending {
+  border-left: 5px solid #ffa500;
+}
+
+.stage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.delete-button {
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.stage-actions button {
+  padding: 0.5rem 1rem;
+  background-color: #00a859;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stage-actions button:hover {
+  background-color: #008f4c;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.chart-box {
+  background-color: #014d26;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.chart-box h4 {
+  margin-bottom: 1rem;
+  color: #90ee90;
+}

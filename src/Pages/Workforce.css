@@ -1,0 +1,128 @@
+.workforce-container {
+  background-color: #013220;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f3c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.project-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.project-header .back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.project-header .back-button:hover {
+  color: #90EE90;
+}
+
+.workforce-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-worker-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-worker-form input,
+.add-worker-form select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.add-worker-form button {
+  background-color: #006400;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-worker-form button:hover {
+  background-color: #228B22;
+}
+
+.workforce-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.5rem;
+}
+
+.worker-card {
+  background-color: #ffffff;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.worker-card:hover {
+  transform: translateY(-5px);
+}
+
+.worker-card h3 {
+  color: #006400;
+  margin-bottom: 0.5rem;
+}
+
+.worker-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.dismiss-btn {
+  margin-top: 0.8rem;
+  background-color: #8b0000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.dismiss-btn:hover {
+  background-color: #a80000;
+}
+
+/* Status Borders */
+.active {
+  border-left: 6px solid #28a745;
+}
+
+.inactive {
+  border-left: 6px solid #dc3545;
+}

@@ -1,0 +1,52 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #006400;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rcms-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.rcms-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.header-center {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.role-badge {
+  background-color: white;
+  color: #006400;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.header-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}

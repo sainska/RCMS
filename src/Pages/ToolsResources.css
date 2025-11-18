@@ -1,0 +1,100 @@
+.tools-resources-container {
+  background-color: #013220; /* Dark green background */
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Header (New) === */
+.tools-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00703c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.tools-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.tools-header .back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.tools-header .back-button:hover {
+  color: #90EE90;
+}
+
+/* === Title === */
+.tools-title {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* === Grid Layout === */
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* === Tool Card === */
+.tool-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 255, 0, 0.2);
+}
+
+/* === Icon & Button === */
+.tool-icon {
+  font-size: 2.5rem;
+  color: #006400;
+  margin-bottom: 1rem;
+}
+
+.tool-btn {
+  margin-top: 1rem;
+  background-color: #006400;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tool-btn:hover {
+  background-color: #228b22;
+}
+
+/* === Input Fields === */
+.upload-input,
+.report-select {
+  margin-top: 0.8rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

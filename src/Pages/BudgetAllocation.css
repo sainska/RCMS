@@ -1,0 +1,115 @@
+.budget-container {
+  background-color: #013220;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f3c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.project-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.project-header .back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.project-header .back-button:hover {
+  color: #90EE90;
+}
+
+.budget-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #90EE90;
+  margin-bottom: 2rem;
+}
+
+.budget-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.budget-card {
+  background-color: #fff;
+  color: #013220;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.budget-card:hover {
+  transform: translateY(-5px);
+}
+
+.budget-card h3 {
+  color: #006400;
+  margin-bottom: 1rem;
+}
+
+.budget-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.budget-card ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.budget-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  color: #2e8b57;
+}
+
+.budget-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #006400;
+  color: white;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.budget-btn:hover {
+  background-color: #228b22;
+}
+
+.upload-field {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+}

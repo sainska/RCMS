@@ -1,0 +1,401 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Construction Dashboard Design System - Green/White/Black Theme */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    --primary: 140 60% 25%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 13% 45%;
+
+    --accent: 140 45% 35%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 140 60% 25%;
+
+    --radius: 0.75rem;
+
+    /* Construction theme colors */
+    --construction-green: 140 60% 25%;
+    --construction-green-light: 140 45% 35%;
+    --construction-green-dark: 140 70% 20%;
+    --construction-gray: 210 10% 23%;
+    --construction-gray-light: 210 10% 92%;
+    --construction-success: 140 70% 40%;
+    --construction-warning: 45 93% 47%;
+    --construction-danger: 0 84% 60%;
+
+    /* Sidebar specific */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 9%;
+    --sidebar-primary: 140 60% 25%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 140 60% 25% / 0.08;
+    --sidebar-accent-foreground: 0 0% 9%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 140 60% 25%;
+
+    /* Gradients */
+    --gradient-construction: linear-gradient(135deg, hsl(var(--construction-green)), hsl(var(--construction-green-light)));
+    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    
+    /* Shadows */
+    --shadow-construction: 0 4px 20px -2px hsl(var(--construction-green) / 0.1);
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px 0 hsl(0 0% 0% / 0.06);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Utility bridge classes used across dashboards */
+.bg-gradient-construction {
+  background-image: var(--gradient-construction);
+}
+
+.text-construction {
+  color: hsl(var(--construction-green));
+}
+
+.text-construction-green {
+  color: hsl(var(--construction-green));
+}
+
+.bg-construction-green {
+  background-color: hsl(var(--construction-green));
+}
+
+.text-construction-success {
+  color: hsl(var(--construction-success));
+}
+
+.text-construction-warning {
+  color: hsl(var(--construction-warning));
+}
+
+.text-construction-danger {
+  color: hsl(var(--construction-danger));
+}
+
+.bg-construction-success {
+  background-color: hsl(var(--construction-success));
+}
+
+.bg-construction-warning {
+  background-color: hsl(var(--construction-warning));
+}
+
+.bg-construction-danger {
+  background-color: hsl(var(--construction-danger));
+}
+
+.bg-construction-gray-light {
+  background-color: hsl(var(--construction-gray-light));
+}
+
+.shadow-construction {
+  box-shadow: var(--shadow-construction);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+/* Sidebar palette hooks referenced by Sidebar.jsx */
+.bg-sidebar-background { 
+  background-color: hsl(var(--sidebar-background)); 
+}
+.border-sidebar-border { 
+  border-color: hsl(var(--sidebar-border)); 
+}
+.text-sidebar-foreground { 
+  color: hsl(var(--sidebar-foreground)); 
+}
+.bg-sidebar-accent { 
+  background-color: hsl(var(--sidebar-accent)); 
+}
+.bg-sidebar-primary { 
+  background-color: hsl(var(--sidebar-primary)); 
+}
+.text-sidebar-primary-foreground { 
+  color: hsl(var(--sidebar-primary-foreground)); 
+}
+.bg-sidebar-avatar { 
+  background-color: hsl(var(--sidebar-primary)); 
+}
+
+/* Dashboard container with full coverage */
+.dashboard-container {
+  background: transparent;
+  min-height: calc(100vh - 4rem); /* Full height minus header */
+}
+
+/* Smooth, consistent scrollbars (keeps your existing color palette) */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #a7b0a4 transparent; /* muted green-gray thumb on transparent track */
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a7b0a4;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Gentle focus outlines for accessibility without breaking your colors */
+.focus-visible:focus {
+  outline: 2px solid #6b8e23;
+  outline-offset: 2px;
+}
+
+/* Enhanced card styles with modern animations */
+.hover-scale {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px -10px rgba(5, 150, 105, 0.2);
+}
+
+/* Enhanced welcome card animations */
+.welcome-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome-card:hover {
+  transform: translateY(-2px);
+}
+
+.welcome-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Enhanced action button animations */
+.action-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.action-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.action-button:hover::before {
+  left: 100%;
+}
+
+.action-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Enhanced stats card animations */
+.stats-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center bottom;
+}
+
+.stats-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, hsl(var(--construction-green) / 0.08) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.stats-card:hover::before {
+  opacity: 1;
+}
+
+/* Enhanced fade in animation */
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced activity dot pulse */
+.activity-dot {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.activity-dot:hover {
+  transform: scale(1.2);
+}
+
+.activity-dot::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: pulse 2.5s infinite;
+}
+
+.activity-dot.success::before {
+  background: hsl(var(--construction-success) / 0.3);
+}
+
+.activity-dot.warning::before {
+  background: hsl(var(--construction-warning) / 0.3);
+}
+
+.activity-dot.info::before {
+  background: hsl(var(--construction-green) / 0.3);
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(2); opacity: 0; }
+}
+
+/* Activity item hover effects */
+.activity-item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.activity-item:hover {
+  transform: translateX(12px);
+}
+
+/* Progress bar animations */
+.progress-bar {
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card entrance animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-entrance {
+  animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+}
+
+.card-entrance:nth-child(1) { animation-delay: 0.1s; }
+.card-entrance:nth-child(2) { animation-delay: 0.2s; }
+.card-entrance:nth-child(3) { animation-delay: 0.3s; }
+.card-entrance:nth-child(4) { animation-delay: 0.4s; }
+
+/* Micro-interactions */
+.interactive-element {
+  transition: all 0.2s ease;
+}
+
+.interactive-element:hover {
+  transform: translateY(-1px);
+}
+
+.interactive-element:active {
+  transform: translateY(0) scale(0.98);
+}

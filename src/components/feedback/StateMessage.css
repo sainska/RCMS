@@ -1,0 +1,56 @@
+.state-message {
+  border: 1px dashed rgba(15, 118, 110, 0.3);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.35rem;
+  background: rgba(15, 118, 110, 0.04);
+}
+
+.state-message__icon {
+  font-size: 1.75rem;
+}
+
+.state-message__title {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.state-message__description {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.state-message__action {
+  justify-self: center;
+  margin-top: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background-color: #0f766e;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.state-message__action:hover {
+  opacity: 0.9;
+}
+
+.state-message--error {
+  border-color: rgba(220, 38, 38, 0.3);
+  background: rgba(248, 113, 113, 0.08);
+}
+
+.state-message--success {
+  border-color: rgba(34, 197, 94, 0.25);
+  background: rgba(187, 247, 208, 0.25);
+}
+
+.state-message--info {
+  border-color: rgba(14, 165, 233, 0.35);
+  background: rgba(125, 211, 252, 0.18);
+}
+

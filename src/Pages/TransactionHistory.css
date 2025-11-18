@@ -1,0 +1,137 @@
+.transaction-history-container {
+  background-color: #013220;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f3c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.module-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.module-back {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.module-back:hover {
+  color: #90EE90;
+}
+
+.module-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.transactions-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.transaction-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 320px;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+  color: #333;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.txn-icon {
+  font-size: 2.2rem;
+  color: #006400;
+  margin-top: 0.4rem;
+}
+
+.txn-details h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #006400;
+}
+
+.txn-details p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.txn-status {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.txn-status.success {
+  color: green;
+}
+
+.txn-status.failed {
+  color: red;
+}
+
+.txn-status.pending {
+  color: orange;
+}
+
+/* Action Buttons */
+.txn-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.action-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn {
+  background-color: #228B22;
+  color: white;
+}
+
+.download-btn:hover {
+  background-color: #006400;
+}
+
+.send-btn {
+  background-color: #90EE90;
+  color: #013220;
+}
+
+.send-btn:hover {
+  background-color: #66cc66;
+}

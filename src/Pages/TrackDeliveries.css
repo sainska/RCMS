@@ -1,0 +1,94 @@
+.track-deliveries-container {
+  background-color: #013220;
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.track-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Colored Cards Based on Status */
+.delivery-card {
+  background-color: #ffffff;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.delivery-card:hover {
+  transform: translateY(-5px);
+}
+
+.delivery-card h3 {
+  color: #006400;
+  margin-bottom: 0.8rem;
+}
+
+.delivery-card p {
+  margin: 0.4rem 0;
+}
+
+.delivery-card span {
+  font-weight: 600;
+  color: #013220;
+}
+
+.status {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+/* Status-specific Styling */
+.delivered {
+  border-left: 6px solid #28a745;
+}
+
+.in-progress {
+  border-left: 6px solid #ffc107;
+}
+
+.not-yet-delivered {
+  border-left: 6px solid #dc3545;
+}
+
+/* Reuse Header Styles */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f3c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.project-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.project-header .back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.project-header .back-button:hover {
+  color: #90EE90;
+}

@@ -1,0 +1,101 @@
+.upload-container {
+  background-color: #013220;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+/* Header */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f3c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.project-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.project-header .back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.project-header .back-button:hover {
+  color: #90EE90;
+}
+
+/* Title */
+.upload-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #90EE90;
+  margin-bottom: 2rem;
+}
+
+/* Grid */
+.upload-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Card */
+.upload-card {
+  background-color: #ffffff;
+  color: #013220;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.upload-card:hover {
+  transform: translateY(-5px);
+}
+
+.upload-icon {
+  font-size: 2.5rem;
+  color: #006400;
+  margin-bottom: 1rem;
+}
+
+.upload-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.upload-card input[type="file"] {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.upload-card button {
+  background-color: #006400;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-card button:hover {
+  background-color: #228b22;
+}

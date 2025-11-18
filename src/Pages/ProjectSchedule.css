@@ -1,0 +1,89 @@
+.schedule-container {
+  background-color: #013220;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00703c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.schedule-header .back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.schedule-header .back-button:hover {
+  color: #90EE90;
+}
+
+/* Title */
+.schedule-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #90EE90;
+  font-size: 1.7rem;
+}
+
+/* Cards Grid */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual Schedule Card */
+.schedule-card {
+  background-color: #ffffff;
+  color: #013220;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+}
+
+.schedule-card h3 {
+  font-size: 1.2rem;
+  color: #006400;
+  margin-bottom: 0.5rem;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  height: 20px;
+  margin-top: 0.8rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #228B22;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  transition: width 0.5s ease;
+  padding: 0 0.5rem;
+}

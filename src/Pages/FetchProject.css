@@ -1,0 +1,88 @@
+.fetch-container {
+  background-color: #013220;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005f3c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.project-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.project-header .back-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+.project-header .back-button:hover {
+  color: #90EE90;
+}
+
+.fetch-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #90EE90;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 255, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #006400;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin: 0.3rem 0;
+}
+
+.details-btn,
+.send-btn {
+  background-color: #006400;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover,
+.send-btn:hover {
+  background-color: #228b22;
+}
